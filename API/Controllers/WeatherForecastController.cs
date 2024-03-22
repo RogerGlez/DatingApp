@@ -6,7 +6,7 @@ namespace API.Controllers;
 [Route("[controller]")]
 public class WeatherForecastController : ControllerBase
 {
-    string[] summaries = [
+    readonly string[] summaries = [
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
     ];
 
