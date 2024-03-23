@@ -11,7 +11,7 @@ builder.Services.AddCors();
 
 var app = builder.Build();
 app.UseHttpsRedirection();
-app.UseCors(builder => builder.AllowAnyHeader().AllowAnyOrigin().WithOrigins("http://localhost:4200"));
+app.UseCors(builder => builder.AllowAnyHeader().AllowAnyOrigin().WithOrigins("https://localhost:4200"));
 app.UseAuthorization();
 app.MapControllers();
 app.Run();
